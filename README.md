@@ -32,4 +32,18 @@ Windows example using `COM5` and 19200 bps:
 $ python serial_loger.py -d COM5 -s 19200
 Logging started. Ctrl-C to stop.
 ```
+//apply confgs
 
+ssh auth 
+
+raspi-config enable serial port, resol.conf dns;
+
+rc.local
+sudo python /home/pi/Abrantes/serial_logger.py -d /dev/ttyAMA0 &
+
+
+ssh key:
+https://linuxize.com/post/how-to-setup-passwordless-ssh-login/
+
+crontab -e
+30 min 
